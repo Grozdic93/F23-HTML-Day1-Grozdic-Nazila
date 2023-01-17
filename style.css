@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.animate {
+    font-family: 'Rubik Microbe', cursive;
+    ;
+    font-size: 6.8rem;
+    color: hsla(180, 100%, 50%);
+    margin-right: 95px;
+    position: absolute;
+}
+
+.animate:hover {
+    animation: blinkLike 1s ease forwards;
+    cursor: pointer;
+
+}
+
+
+
+@keyframes blinkLike {
+
+    0% {
+        transform: scaleY(0.7);
+
+        color: hsla(180, 100%, 50%, 0.1);
+    }
+
+
+
+
+
+
+    60% {
+        transform: scaleY(1.2);
+
+        color: hsla(180, 100%, 80%, 1);
+
+    }
+
+
+
+
+
+
+
+
+    100% {
+        transform: scaleY(1);
+
+        color: hsl(180, 100%, 50%);
+
+
+    }
+
+    ;
+
+
+
+}
+
+.homeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    height: 48px;
+    font-size: 32px;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.homeBtn a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.homeBtn a:hover,
+.homeBtn a:focus {
+
+    background-color: whitesmoke;
+    color: black
+}
+
+.homeBtn a {
+    color: whitesmoke;
+    text-decoration: none;
+    width: 200px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.homeBtn a:active {
+    color: hsl(180, 100%, 50%)
+}
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickMe {
+    position: relative;
+    color: whitesmoke;
+    font-size: 22px;
+    border: 1px solid whitesmoke;
+    top: -170px;
+    right: -460px;
+    width: 100px;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 20px 0;
+
+    text-align: center;
+    animation: colorChange 5s ease-in-out infinite
+}
+
+.clickMe p {
+    text-align: center;
+
+}
+
+.contact-footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    width: 100%;
+
+}
+
+@keyframes colorChange {
+
+
+
+    15% {
+        color: rgb(211, 211, 101)
+    }
+
+
+
+
+    30% {
+        color: rgb(220, 114, 97)
+    }
+
+
+
+
+    45% {
+        color: rgb(128, 223, 230)
+    }
+
+
+
+
+    60% {
+        color: rgb(207, 101, 211)
+    }
+
+
+
+
+    75% {
+        color: rgb(63, 167, 69)
+    }
+
+    100% {
+        color: whitesmoke;
+    }
+
+
+
+}
